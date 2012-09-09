@@ -1,0 +1,22 @@
+
+Prometheus is a Java-based time-shifting application for recording SHOUTcast 
+streams. This project was created using the NetBeans IDE and JDK 1.7 and 
+references the following 3rd-party Java libraries:
+
+* commons-io-2.4 (Collection of I/O utilities)
+* commons-cli-1.2 (Command line argument parser)
+* commons-logging-1.4 (Wrapper for different logging APIs)
+* beaglebuddy_mp3 (Java mp3 tagging library)
+
+To run Prometheus from the command line, you will need to go to the folder
+location of the jar file and type the following:
+
+java -jar "prometheus.jar" <stream-url> [options]
+
+-d <dir>   Optional: The destination directory
+-i         Optional: Don't add ID3V1 Tags to output file
+-o         Optional: Write over tracks from incomplete
+-q         Optional: Add sequence number to output file
+-x         Optional: Run this application in UI mode
+-v         Optional: Print version info and quit 
+
